@@ -1,21 +1,21 @@
 //
-// Example usage of the aegix-log library
+// Example usage of the aegis-log library
 // Conditional logging
 //
 
 // Disable trace and debug messages in release mode
 #ifdef NDEBUG
-#define AEGIX_LOG_DISABLE_DEBUG
-#define AEGIX_LOG_DISABLE_TRACE
+#define AEGIS_LOG_DISABLE_DEBUG
+#define AEGIS_LOG_DISABLE_TRACE
 #endif
 
-#include <aegix-log/log.h>
-#include <aegix-log/sinks/console_sink.h>
+#include <aegis-log/log.h>
+#include <aegis-log/sinks/console_sink.h>
 
 auto main() -> int
 {
-	Aegix::Log::init(Aegix::Log::Trace) // Show all log messages
-		.addSink<Aegix::Log::ConsoleSink>();
+	Aegis::Log::init(Aegis::Log::Trace) // Show all log messages
+		.addSink<Aegis::Log::ConsoleSink>();
 
 	ALOG::fatal("This is a critical message");
 	ALOG::warn("This is a warning message");

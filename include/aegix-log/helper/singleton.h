@@ -2,7 +2,7 @@
 
 #include <cassert>
 
-namespace Aegix::Log
+namespace Aegis::Log
 {
 	/// @brief Base class for singletons
 	/// @tparam T Class type of the derived class for casting the instance
@@ -34,4 +34,4 @@ namespace Aegix::Log
 
 		inline static T* s_instance = nullptr;
 	};
-} // namespace Aegix
+} // namespace Aegis

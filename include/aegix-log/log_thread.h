@@ -1,6 +1,6 @@
 #pragma once
 
-#include "aegix-log/log_entry.h"
+#include "aegis-log/log_entry.h"
 
 #include <condition_variable>
 #include <functional>
@@ -9,7 +9,7 @@
 #include <queue>
 #include <thread>
 
-namespace Aegix::Log
+namespace Aegis::Log
 {
 	/// @brief A thread that processes log tasks
 	class LogThread
@@ -99,4 +99,4 @@ namespace Aegix::Log
 		static std::shared_ptr<LogThread> logThread = std::make_shared<LogThread>();
 		return logThread;
 	}
-} // namespace Aegix::Log
+} // namespace Aegis::Log

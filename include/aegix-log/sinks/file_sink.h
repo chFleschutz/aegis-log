@@ -1,13 +1,13 @@
 #pragma once
 
-#include "aegix-log/log.h"
-#include "aegix-log/sinks/log_sink.h"
+#include "aegis-log/log.h"
+#include "aegis-log/sinks/log_sink.h"
 
 #include <cassert>
 #include <filesystem>
 #include <fstream>
 
-namespace Aegix::Log
+namespace Aegis::Log
 {
 	class FileSink : public LogSink
 	{
@@ -61,4 +61,4 @@ namespace Aegix::Log
 	private:
 		std::ofstream m_file;
 	};
-} // namespace Aegix
+} // namespace Aegis

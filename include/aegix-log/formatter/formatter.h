@@ -1,8 +1,8 @@
 #pragma once
 
-#include "aegix-log/log_entry.h"
+#include "aegis-log/log_entry.h"
 
-namespace Aegix::Log
+namespace Aegis::Log
 {
 	class Formatter
 	{
@@ -17,4 +17,4 @@ namespace Aegix::Log
 
 		virtual auto format(const LogEntry& entry) -> std::string = 0;
 	};
-} // namespace Aegix::Log
+} // namespace Aegis::Log

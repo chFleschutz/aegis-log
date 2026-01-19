@@ -1,10 +1,10 @@
 #pragma once
 
-#include "aegix-log/sinks/log_sink.h"
+#include "aegis-log/sinks/log_sink.h"
 
 #include <iostream>
 
-namespace Aegix::Log
+namespace Aegis::Log
 {
 	class ConsoleSink : public LogSink
 	{
@@ -22,4 +22,4 @@ namespace Aegix::Log
 			}
 		}
 	};
-} // namespace Aegix
+} // namespace Aegis

@@ -1,10 +1,10 @@
 //
-// Example usage of the aegix-log library
+// Example usage of the aegis-log library
 // Basic logging
 //
 
-#include <aegix-log/log.h>
-#include <aegix-log/sinks/console_sink.h>
+#include <aegis-log/log.h>
+#include <aegis-log/sinks/console_sink.h>
 
 #include <filesystem>
 #include <iomanip>
@@ -14,8 +14,8 @@
 auto main() -> int
 {
 	// Initialize default logger
-	Aegix::Log::init(Aegix::Log::Trace) // Show all log messages
-		.addSink<Aegix::Log::ConsoleSink>();
+	Aegis::Log::init(Aegis::Log::Trace) // Show all log messages
+		.addSink<Aegis::Log::ConsoleSink>();
 
 	// Stream style logging
 	ALOG::fatal() << "This is a fatal message";

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.28)
 
-project(AegixLogSamples)
+project(AegisLogSamples)
 
 add_subdirectory(basic_logging)
 add_subdirectory(conditional_logging)

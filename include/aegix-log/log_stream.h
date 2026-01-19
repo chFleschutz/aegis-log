@@ -1,13 +1,13 @@
 #pragma once
 
-#include "aegix-log/log_entry.h"
-#include "aegix-log/logger.h"
+#include "aegis-log/log_entry.h"
+#include "aegis-log/logger.h"
 
 #include <chrono>
 #include <sstream>
 #include <thread>
 
-namespace Aegix::Log
+namespace Aegis::Log
 {
 	template <int LoggerID>
 	class LogStream
@@ -60,4 +60,4 @@ namespace Aegix::Log
 			return *this;
 		}
 	};
-} // namespace Aegix::Log
+} // namespace Aegis::Log

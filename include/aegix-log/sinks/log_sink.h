@@ -1,9 +1,9 @@
 #pragma once
 
-#include "aegix-log/formatter/formatter.h"
-#include "aegix-log/log_entry.h"
+#include "aegis-log/formatter/formatter.h"
+#include "aegis-log/log_entry.h"
 
-namespace Aegix::Log
+namespace Aegis::Log
 {
 	class LogSink
 	{
@@ -26,4 +26,4 @@ namespace Aegix::Log
 	private:
 		std::unique_ptr<Log::Formatter> m_formatter;
 	};
-} // namespace Aegix::Log
+} // namespace Aegis::Log

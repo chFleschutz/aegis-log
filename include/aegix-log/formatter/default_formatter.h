@@ -1,8 +1,8 @@
 #pragma once
 
-#include "aegix-log/formatter/formatter.h"
+#include "aegis-log/formatter/formatter.h"
 
-namespace Aegix::Log
+namespace Aegis::Log
 {
 	class DefaultFormatter : public Formatter
 	{
@@ -26,4 +26,4 @@ namespace Aegix::Log
 				entry.message);
 		}
 	};
-} // namespace Aegix::Log
+} // namespace Aegis::Log

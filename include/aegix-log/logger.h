@@ -1,11 +1,11 @@
 #pragma once
 
-#include "aegix-log/detail/config.h"
-#include "aegix-log/formatter/default_formatter.h"
-#include "aegix-log/helper/singleton.h"
-#include "aegix-log/log_entry.h"
-#include "aegix-log/log_thread.h"
-#include "aegix-log/sinks/log_sink.h"
+#include "aegis-log/detail/config.h"
+#include "aegis-log/formatter/default_formatter.h"
+#include "aegis-log/helper/singleton.h"
+#include "aegis-log/log_entry.h"
+#include "aegis-log/log_thread.h"
+#include "aegis-log/sinks/log_sink.h"
 
 #include <functional>
 #include <future>
@@ -14,7 +14,7 @@
 #include <type_traits>
 #include <vector>
 
-namespace Aegix::Log
+namespace Aegis::Log
 {
 	template <int ID>
 	class Logger : public Singleton<Logger<ID>>
@@ -177,4 +177,4 @@ namespace Aegix::Log
 		static Logger<LoggerID> logger(logThread, severityThreshold);
 		return logger;
 	}
-} // namespace Aegix::Log
+} // namespace Aegis::Log

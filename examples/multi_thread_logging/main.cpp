@@ -1,18 +1,18 @@
 //
-// Example usage of the aegix-log library
+// Example usage of the aegis-log library
 // Multi-threaded logging
 //
 
-#include <aegix-log/log.h>
-#include <aegix-log/sinks/console_sink.h>
+#include <aegis-log/log.h>
+#include <aegis-log/sinks/console_sink.h>
 
 #include <thread>
 #include <vector>
 
 auto main() -> int
 {
-	Aegix::Log::init() //
-		.addSink<Aegix::Log::ConsoleSink>();
+	Aegis::Log::init() //
+		.addSink<Aegis::Log::ConsoleSink>();
 
 	constexpr int numThreads = 5;
 	constexpr int numMessages = 20;

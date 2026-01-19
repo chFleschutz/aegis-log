@@ -1,13 +1,13 @@
 #pragma once
 
-#include "aegix-log/detail/config.h"
-#include "aegix-log/log_entry.h"
-#include "aegix-log/log_stream.h"
-#include "aegix-log/logger.h"
+#include "aegis-log/detail/config.h"
+#include "aegis-log/log_entry.h"
+#include "aegis-log/log_stream.h"
+#include "aegis-log/logger.h"
 
-namespace ALOG = Aegix::Log;
+namespace ALOG = Aegis::Log;
 
-namespace Aegix::Log
+namespace Aegis::Log
 {
 	constexpr int DEFAULT_LOGGER = 0;
 	constexpr int DEFAULT_THREAD = 0;
@@ -120,4 +120,4 @@ namespace Aegix::Log
 		else
 			return NoOpLogStream();
 	}
-} // namespace Aegix::Log
+} // namespace Aegis::Log

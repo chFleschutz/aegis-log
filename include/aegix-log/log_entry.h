@@ -4,7 +4,7 @@
 #include <string>
 #include <thread>
 
-namespace Aegix::Log
+namespace Aegis::Log
 {
 	enum class Severity
 	{
@@ -37,4 +37,4 @@ namespace Aegix::Log
 		std::thread::id threadId;
 		std::string message;
 	};
-} // namespace Aegix::Log
+} // namespace Aegis::Log
